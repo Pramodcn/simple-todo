@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #D4145A , #1BFFFF);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+header{
+    margin-top: 10px;
+    font-size: 2rem;
+    /* 1rem=16px;1.5rem=24px; */
+    font-family: raleway, sans-serif;
+    color: #0084ff;
+    font-weight:900;
+    text-shadow: 2px 2px 8px yellow;
+
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,form button{
+    padding: 0.6rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+input{
+    border-radius: 15px;
+    /* margin: 0.5%; */
+
+}
+form button{
+    margin: 1px;
+    border-radius: 20%;
+    color: #0084ff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover{
+    background: #000;
+    color: white;
+}
+.filter-todo{
+    padding: 1rem;
+}
+option{
+    font-size: 20px;
+    color:rgb(78, 150, 5);
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+}
+select{
+    color:#eb5c74;
+    font-family: Robot;
+    cursor:pointer;
+    width: 12rem;
+}
+.select::after{
+    content:"\25BC";
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: 1rem;
+    pointer-events:none;
+    cursor:pointer;
+    background: #0f92d8;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todo-list{
+    min-width: 35%;
+    list-style: none;
+    margin-right: 20%;
+    
+}
+.todo{
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+
+}
+.todo li{
+    flex: 1;
+}
+.trash-btn ,.complete-btn{
+    background: #eb5c74;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+
+}
+.complete-btn{
+    background: #623f99;
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+.fall{
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+.completed{
+    text-decoration:line-through;
+    opacity: ;
+}
